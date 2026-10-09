@@ -1,0 +1,61 @@
+\documentclass[10pt]{report}
+
+\usepackage[a4paper,margin=1in,rmargin=2.5in,marginparsep=16pt, marginparwidth=1.5in]{geometry}
+
+\usepackage{sidenotes}
+\usepackage{fancyhdr}
+\renewcommand{\chaptermark}[1]{
+	\markboth{\chaptername\ \thechapter:\ #1}
+	{}
+}
+\renewcommand{\sectionmark}[1]{
+	\markright{\thesection{}\ -- \ #1}
+	{}
+}
+\fancyhead[L]{\leftmark\\\rightmark}
+\fancyhead[R]{}
+
+% nicer text
+\usepackage{microtype} % general improvements to text appearance
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[osf, helvratio=.9]{newpxtext} % text font
+
+% table of contents
+\usepackage[titles]{tocloft}
+\usepackage[titletoc]{appendix}
+\usepackage{titlesec}
+
+% custom margins
+\usepackage[a4paper,margin=1in,rmargin=2.5in,marginparsep=16pt, marginparwidth=1.5in]{geometry}
+\renewcommand{\baselinestretch}{1.2}
+
+\begin{document}
+	\include{title}
+	\tableofcontents
+	\chapter{The Hadean: The Birth of Our Planet}
+	\chapter{The Archean: The Advent of Microbes}
+	\chapter{The Proterozoic: The Age of Oxygen}
+	\section{The Paleoproterozoic}
+	\section{The Mesoproterozoic}
+	\section{The Neoproterozoic}
+	\chapter{The Paleozoic: The Age of Animals}
+	\section{The Cambrian}
+	\section{The Ordovician}
+	\section{The Silurian}
+	\section{The Devonian}
+	\section{The Carboniferous}
+	\section{The Permian}
+	\chapter{The Mesozoic: The Age of Reptiles}
+	\section{The Triassic}
+	\section{The Jurassic}
+	\section{The Cretaceous}
+	\chapter{The Cenozoic: The Age of Mammals}
+	\section{The Paleocene}
+	\section{The Eocene}
+	\section{The Oligocene}
+	\section{The Miocene}
+	\section{The Pliocene}
+	\section{The Pleistocene}
+	\section{The Holocene}
+\end{document}
